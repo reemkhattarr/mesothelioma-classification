@@ -92,3 +92,15 @@ pip install -r requirements.txt
 - **Script:** `heatmap.py`
 
 ![alt text](images/heatmap.png)
+## Quick commands
+
+Install [uv](https://docs.astral.sh/uv/) and [just](https://just.systems). Each pipeline step above has a recipe:
+
+```bash
+just setup                      # create .venv and install requirements.txt
+just patches --wsi data/<slide>.ndpi
+just features --model resnet50
+just train MLA_features_kimianet/
+just heatmap --wsi-path ... --features-path ... --checkpoint ...
+just                            # list all recipes
+```

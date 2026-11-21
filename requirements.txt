@@ -1,0 +1,16 @@
+torch
+torchvision
+timm
+scikit-learn
+scikit-image
+numpy
+pandas
+h5py
+openslide-python
+openslide-bin
+opencv-python
+pillow
+matplotlib
+seaborn
+tqdm
+huggingface_hub
